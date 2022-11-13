@@ -1,0 +1,199 @@
+html {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+@font-face {
+  font-family: 'Onest';
+  src: local("Onest"), url("./fonts/Onest-Bold.woff2") format("woff2"), url("./fonts/Onest-Bold.woff") format("woff");
+  font-display: swap;
+  font-weight: 700;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Onest';
+  src: local("Onest"), url("./fonts/Onest-Regular.woff2") format("woff2"), url("./fonts/Onest-Regular.woff") format("woff");
+  font-display: swap;
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Onest';
+  src: local("Onest"), url("./fonts/Onest-Medium.woff2") format("woff2"), url("./fonts/Onest-Medium.woff") format("woff");
+  font-display: swap;
+  font-weight: 500;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Onest';
+  src: local("Onest"), url("./fonts/Onest-Light.woff2") format("woff2"), url("./fonts/Onest-Light.woff") format("woff");
+  font-display: swap;
+  font-weight: 300;
+  font-style: normal;
+}
+
+*, *::after, *::before {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  outline: none;
+  font-family: 'Onest', sans-serif;
+  color: #121212;
+}
+
+ul, a, p {
+  color: #121212;
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+.back {
+  background: url(./img/background.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.banner {
+  padding-top: 10px;
+  padding-bottom: 10px;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 130.02%;
+}
+
+.banner-left {
+  max-width: 270px;
+  margin-left: 20px;
+}
+
+.banner-small {
+  font-weight: 500;
+  font-size: 13px;
+  line-height: 130.02%;
+}
+
+.banner-blue {
+  color: #136EF6;
+}
+
+.banner-right {
+  max-width: 540px;
+  margin-left: 35px;
+}
+
+.banner-btn {
+  margin: 0 10px;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 130%;
+}
+
+.modal-dialog {
+  max-width: 930px;
+}
+
+.modal-close {
+  position: absolute;
+  right: 24px;
+  top: 14px;
+}
+
+.modal-body {
+  padding: 40px 95px 40px 55px;
+}
+
+.modal-left {
+  max-width: 490px;
+}
+
+.modal-form {
+  padding-top: 16px;
+  margin-left: 30px;
+}
+
+.modal-title {
+  font-weight: 700;
+  font-size: 34px;
+  line-height: 130%;
+  color: #136EF6;
+}
+
+.modal-subheader {
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 130.02%;
+}
+
+.modal-img {
+  margin-right: 24px;
+}
+
+.modal-li-cont {
+  font-size: 15px;
+  line-height: 130.02%;
+}
+
+.modal-bold {
+  font-weight: 500;
+}
+
+.modal-commen {
+  font-weight: 300;
+  font-size: 12px;
+  line-height: 130.02%;
+}
+
+.modal-btn {
+  position: relative;
+  width: 100%;
+  padding: 12px;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 130%;
+}
+
+.modal-arrow {
+  position: absolute;
+  right: -75px;
+  top: -140%;
+}
+
+.form-floating > .modal-input {
+  height: calc(3rem + 2px);
+  font-size: 14px;
+  line-height: 130%;
+  border: 0.5px solid #136EF6;
+}
+
+.modal-placeholder {
+  font-size: 13px;
+  line-height: 130%;
+  color: #9E9E9E;
+}
+
+.form-floating > .form-select {
+  padding-top: 0.625rem;
+}
+
+@media (max-width: 991px) {
+  .banner {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .banner-arrows {
+    padding: 20px;
+  }
+  .modal-left {
+    max-width: 100%;
+  }
+  .modal-form {
+    margin-left: 0;
+  }
+}
+/*# sourceMappingURL=styles.css.map */

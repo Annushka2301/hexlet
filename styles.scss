@@ -1,0 +1,189 @@
+@import '_variables.scss';
+
+html {
+    box-sizing: border-box;
+}
+
+
+@font-face {
+font-family: 'Onest';
+src: local('Onest'),
+url('./fonts/Onest-Bold.woff2') format('woff2'),
+    url('./fonts/Onest-Bold.woff') format('woff');
+    font-display: swap;
+    font-weight: 700;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Onest';
+    src: local('Onest'),
+    url('./fonts/Onest-Regular.woff2') format('woff2'),
+    url('./fonts/Onest-Regular.woff') format('woff');
+    font-display: swap;
+    font-weight: 400;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Onest';
+    src: local('Onest'),
+    url('./fonts/Onest-Medium.woff2') format('woff2'),
+    url('./fonts/Onest-Medium.woff') format('woff');
+    font-display: swap;
+    font-weight: 500;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Onest';
+    src: local('Onest'),
+    url('./fonts/Onest-Light.woff2') format('woff2'),
+    url('./fonts/Onest-Light.woff') format('woff');
+    font-display: swap;
+    font-weight: 300;
+    font-style: normal;
+}
+
+*, *::after, *::before {
+    box-sizing: border-box;
+    outline: none;
+    font-family: 'Onest', sans-serif;
+    color: #121212;
+}
+
+ul, a, p {
+    color: #121212;
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.back {
+    background: url(./img/background.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.banner {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 130.02%;
+    &-left {
+        max-width: 270px;
+        margin-left: 20px;
+    }
+    &-small {
+        font-weight: 500;
+        font-size: 13px;
+        line-height: 130.02%;
+    }
+    &-blue {
+        color: $blue;
+    }
+    &-right {
+        max-width: 540px;
+        margin-left: 35px;
+    }
+    &-btn {
+        margin: 0 10px;
+        font-weight: 700;
+        font-size: 14px;
+        line-height: 130%;
+    }
+}
+
+.modal {
+    &-dialog {
+        max-width: 930px;
+    }
+    &-close { 
+        position: absolute;
+        right: 24px;
+        top: 14px;
+    }
+    &-body {
+        padding: 40px 95px 40px 55px;
+    }
+    &-left {
+        max-width: 490px;
+    }
+    &-form {
+        padding-top: 16px;
+        margin-left: 30px;
+    }
+    &-title {
+        font-weight: 700;
+        font-size: 34px;
+        line-height: 130%;
+        color: $blue;
+    }
+    &-subheader {
+        font-weight: 500;
+        font-size: 18px;
+        line-height: 130.02%;
+    }
+    &-img {
+        margin-right: 24px;
+    }
+    &-li-cont {
+        font-size: 15px;
+        line-height: 130.02%;
+    }
+    &-bold {
+        font-weight: 500;
+    }
+    &-commen {
+        font-weight: 300;
+        font-size: 12px;
+        line-height: 130.02%;
+    }
+    &-btn {
+        position: relative;
+        width: 100%;
+        padding: 12px;
+        font-weight: 700;
+        font-size: 18px;
+        line-height: 130%;
+    }
+    &-arrow {
+        position: absolute;
+        right: -75px;
+        top: -140%;
+    }
+    .form-floating > &-input {
+        height: calc(3rem + 2px);
+        font-size: 14px;
+        line-height: 130%;
+        border: .5px solid $blue;
+    }
+    &-placeholder {
+        font-size: 13px;
+        line-height: 130%;
+        color: $grey;
+    }
+}
+
+.form-floating>.form-select {
+    padding-top: 0.625rem;
+}
+
+@media (max-width: 991px) {
+    .banner {
+        flex-direction: column;
+        &-arrows {
+            padding: 20px;
+        }
+    }
+    .modal {
+        &-left {
+            max-width: 100%;
+        }
+        &-form {
+            margin-left: 0;
+        }
+    }
+}
